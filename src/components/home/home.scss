@@ -1,0 +1,77 @@
+.App-form{
+    width: 1200px;
+    margin: 15px auto;
+  }
+  .App-form h3{
+    border-left:solid 5px red;
+    text-align: left;
+    font-weight: bolder;
+    padding-left: 15px;
+  }
+  .App-form form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .App-form form input{
+    border: none;
+    background: #f0f0f0;
+    border:solid 1px rgb(224, 224, 224);
+    border-radius: 5px;
+    padding-left: 5px;
+    transition: .5s;
+  }
+  .App-form form input:focus{
+    border:solid 1px rgb(144, 195, 230);
+    box-shadow: 0 0 3px rgb(118, 188, 235);
+  }
+  .App-form form button{
+    background: #ff3b30;
+    color: white;
+    border:none;
+    padding: 3px 15px;
+    border-radius: 5px;
+    border:solid 1px rgb(224, 224, 224);
+    cursor: pointer;
+    transition: .5s;
+  }
+  .App-form form button:hover{
+    background: red;
+  }
+  .App-act{
+    background: #f0f0f0;
+  }
+  .App-act > section{
+    width: 1200px;
+    margin:  30px auto;
+    padding: 25px 0;
+  }
+  .App-act > section ul{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .App-act > section ul li{
+    display: flex;
+    align-items: center;
+  }
+  .App-act > section ul li section{
+    margin-left: 20px;
+  }
+  .App-act > section ul li section > h1{
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .App-act > section ul li section > small{
+    color: #333;
+    /* margin-left: 20px; */
+  }
+  footer{
+    border-top:solid 3px #666;
+    address{
+      padding: 20px 0;
+    }
+  }

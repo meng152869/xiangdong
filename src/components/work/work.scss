@@ -1,0 +1,104 @@
+.Work > span{
+    width: 15px;
+    height: 15px;
+    margin: 15px auto;
+    display: block;
+    background: rgb(230, 36, 36);
+    border-radius: 50%;
+    position: relative;
+    // margin: 15px 0;
+}
+.Work > span::before{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 3px;
+    // left: 690px;
+    // left: 30px;
+    left: -130px;
+    top:6px;
+}
+.Work > span::after{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 3px;
+    right: -130px;
+    top:6px;
+
+}
+.Work > ul{
+    width: 500px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.Work > ul li{
+    cursor: pointer;
+    transition: .5s;
+}
+.Work > ul li::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #111;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.Work > ul li:last-child::after{
+    width: 0px;
+    height: 0px;
+}
+.Work > ul li:hover{
+    color: red;
+}
+.Work-items{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Work-items section{
+    width: 360px;
+    height: 250px;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.Work-items section p{
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    width: 210px;
+    border-radius: 5px;
+    left:calc(50% - 95px);
+    margin: 0 auto;
+    background: rgba($color: #000000, $alpha: 0.5);
+}
+.Work-items section p span{
+    margin: 0 3px;
+    display: inline-block;
+}
+.Work-items section img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s;
+    cursor: pointer;
+}
+.Work-items section:hover{
+    box-shadow: 0 0 15px #444;
+}
+.Work-items section:hover img{
+    transform: scale(1.2);
+    
+}

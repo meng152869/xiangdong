@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+padding: 0; 
+}
+.Banner{
+width: 100%;
+min-width: 1200px;
+overflow: hidden;
+height: 500px;
+position: relative;
+    ul{
+    //    width: 200%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        transition: .5s;
+        transform: translate(-25%);
+        li{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.Banner > span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    // background: crimson;
+    // left: 0;
+    top: calc(50% - 15px);
+    &.left{
+        left: 15px;
+    }
+    &.right{
+        right: 15px;
+    }
+}
+.Ban-circle{
+    position: absolute;
+    left:calc(50% - 5px);
+    bottom: 0;
+    span{
+        width:10px;
+        height: 10px;
+        display: inline-block;
+        background: rgb(212, 212, 212);
+        border-radius: 50%;
+        margin:  0 5px ;
+       
+    }
+}
+.Ban-active{
+    background: rgb(22, 145, 247) !important;
+}

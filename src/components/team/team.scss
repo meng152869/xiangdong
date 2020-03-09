@@ -1,0 +1,69 @@
+.Team{
+    width: 1200px;
+    margin: 0 auto;
+    > img{
+        margin: 20px 0;
+    }
+    .TeamBox{
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        section{
+            width: 280px;
+            position: relative;
+            background: #f0f0f0;
+            margin-top: 30px;
+            transition: .5s;
+            &:hover{
+                box-shadow: 0 0 20px #555;
+                >p{
+                    opacity: 1;
+                }
+            }
+            img{
+                width: 280px;
+                height: 410px;
+                object-fit: cover;
+            }
+            >p{
+                background: rgba($color: #000000, $alpha: .3);
+                position: absolute;
+                top: 360px;
+                width: 280px;
+                opacity: 0;
+                // transition: .5s;
+                span{
+                    display: inline-block;
+                    width: 50%;
+                    color: white;
+                    line-height: 50px;
+                    height: 50px;
+                    &:first-child{
+                        background: black;
+                    }
+                    &:nth-child(2){
+                        background: red;
+                    }
+                }
+            }
+            >div{
+                h4{
+                    text-align: left;
+                    font-size: 18px;
+                    padding-left: 15px;
+                    span{
+                        font-size: 14px;
+                        color: #333;
+                        margin-left: 10px;
+                    }
+                }
+                p{
+                    margin: 5px;
+                    padding-left: 15px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

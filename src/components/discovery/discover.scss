@@ -1,0 +1,100 @@
+.Discover{
+    margin-top: 40px;
+}
+.Discover > span{
+    width: 15px;
+    height: 15px;
+    margin: 15px auto;
+    display: block;
+    background: rgb(230, 36, 36);
+    border-radius: 50%;
+    position: relative;
+    // margin: 15px 0;
+}
+.Discover > span::before{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 3px;
+    // left: 690px;
+    // left: 30px;
+    left: -130px;
+    top:6px;
+}
+.Discover > span::after{
+    background: black;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 3px;
+    right: -130px;
+    top:6px;
+
+}
+.DisC-items section{
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    border:solid 1px #818181;
+    text-align: left;
+    img{
+        width: 680px;
+    }
+    div{
+        width: 480px;
+        margin-left: 20px;
+        h1{
+            font-size: 25px;
+            font-weight: bolder;
+            color: #555;
+            margin-top:20px
+            // font: ;
+        }
+        p{
+            font-size: 18px;
+            margin: 20px 0;
+            span{
+                margin-right:   10px;
+            }
+        }
+        h2{
+            margin:15px 0;
+        }
+        form{
+            // width: 120;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input{
+                padding:  5px;
+                width: 180px;
+                margin: 10px 20px;
+                background: #fff;
+                border:none;
+                border:solid 1px #999;
+                border-radius: 5px;
+                transition: .5s;
+                &:focus{
+                    border:solid 1px rgb(144, 195, 230);
+                    box-shadow: 0 0 3px rgb(118, 188, 235);
+                }
+            }
+            button{
+                width: 180px;
+                margin: 10px 20px;
+                padding:  5px;
+                background: #ff3b30;
+                border:none;
+                color: white;
+                border-radius: 5px;
+                transition: .5s;
+                // color: #000;
+                cursor: pointer;
+                &:hover{
+                    background: red;
+                  }
+            }
+        }
+    }
+}

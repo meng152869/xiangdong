@@ -1,0 +1,95 @@
+.Case{
+    ul{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        border:solid 1px #ebebeb;
+        margin-top: 30px;
+        padding:10px 0;
+        
+        // justify-content: space-between;
+        li{
+            width:120px;
+            padding:10px 0;
+            margin-top:10px;
+            background: #f0f0f0;
+            margin-right: 34px;
+            cursor: pointer;
+            &:nth-child(8n){
+                margin-right: 0;
+            }
+        }
+    }
+    >div{
+        display: flex;
+        width:1200px;
+        margin:0 auto;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        >section{
+            border:solid 1px #f0f0f0;
+            margin-right:16px;
+            margin-top: 20px;
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 15px #333;
+            }
+            &:nth-child(4n){
+                margin-right: 0 !important;
+            }
+            >img{
+                width: 286px;
+                height: 200px;
+                object-fit: cover;
+            }
+            >div{
+                display: flex;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                // >section{
+                    >img{
+                        width: 80px;
+                        height: 120px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        margin-left: 10px;
+                    }
+                    >section{
+                        margin-left: 20px;
+                        text-align: left;
+                        
+                        h3{
+                            font-size: 16px;
+                            
+                        }
+                        p{
+                            margin: 0;
+                            padding: 0;
+                            margin-top: 20px;
+                            width: 120px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        button{
+                            margin-top:20px;
+                            background: rgb(230, 50, 50);
+                            border:none;
+                            color:white;
+                            padding: 2px 15px;
+                            border:solid 1px #d0d1d0;
+                            border-radius: 5px;
+                        }
+                    }
+                // }
+            }
+        }
+    }
+}
+.Case-act{
+    background: #e92513 !important;
+    color: white;
+    
+}

@@ -1,0 +1,80 @@
+.D-total{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    section{
+        // border:solid 1px #111;
+        &:first-child{
+              border:none;
+              width: 32%;
+            .Det-top{
+                border:solid 1px rgb(214, 214, 214);
+                margin-top: 30px;
+                background: #f0f0f0;
+                border-radius: 10px;
+                h2{
+                    font-weight:bolder;
+                    margin-top: 20px;
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li{
+                        width: 30%;
+                        margin-top:20px;
+                    }
+                }
+            }
+            .Det-en{
+                display: flex;
+                border:solid 1px rgb(214, 214, 214);
+                background: #f0f0f0;
+                margin-top: 30px;
+                border-radius: 10px;
+                img{
+                    width: 160px;
+                }
+                div{
+                    text-align: left;
+                    margin-left: 20px;
+                    h3{
+                        font-size: 25px;
+                        font-weight: bold;
+                        margin: 0;
+                        margin-top: 10px;
+                        padding: 0;
+                    }
+                    small{
+                        color: #222;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 2px 0;
+                        font-size: 14px;
+                        color: #111;
+                    }
+                    button{
+                        background: #ff3b30;
+                        padding: 2px 15px;
+                        border:solid 1px rgb(247, 244, 244);
+                        border-radius: 5px;
+                        color: #fff;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2){
+            width: 64%;
+            h1{
+                font-size: 35px;
+                text-align: left;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

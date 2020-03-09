@@ -1,0 +1,94 @@
+$bgColor:#f0f0f0;
+$bgcolor:#fff;
+.Top{
+//    width:100vw;
+    background: $bgcolor;
+    border-bottom: solid 1px #999;
+    .Top-headerTop{
+        background: $bgColor;
+        color: #777;
+        border-bottom: solid 1px rgb(226, 225, 225);
+        section{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 5px 0;
+        }
+    }
+    .Top-headerBtm{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+       >h1{
+           letter-spacing: 5px;
+           position: relative;
+           &::first-letter{
+               color:red;
+               font-weight: bold;
+               font-size: 45px;
+           }
+           &:after{
+               content: "XiangDong DESIGN";
+               font-size: 11px;
+               width: 200px;
+               position: absolute;
+               border-bottom:  solid 1px black;
+               bottom:-10px;
+               left: 0;
+               color: red;
+               font-weight: bolder;
+               border-radius: 40%;
+            //    background: $bgColor;
+            //    box-shadow: 20px 3px 2px rgb(218, 218, 218);
+            //    width: 50px;
+            //    text-align: right;
+           }
+       }
+       .Top-searchBox{
+        border:solid 1px red;
+        height: 33px;
+        padding-left: 5px;
+        margin-top: 24px ;
+        // margin-top:calc(50% - 16px);
+        input{
+            margin:5px 0;
+            width: 350px;
+            background: $bgcolor;
+            border: none;
+            // padding:3 0 3 
+        }
+        button{
+            border:none;
+            height: 31px;
+            // display: inline-block;
+            vertical-align: top;
+            padding: 0 20px;
+            background: red;
+            color: white;
+
+        }
+       }
+       .Top-phone{
+           display: flex;
+           color: red;
+           align-self: center;
+           section{
+               h3{
+                margin: 0;
+                padding: 0;
+               }
+               >h1{
+                   color: red;
+                   font-weight: bolder;
+                   
+                //    margin: 0;
+                //    padding: 0;
+               }
+           }
+       }
+    }
+}
